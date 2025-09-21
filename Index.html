@@ -1,49 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Profile of a professional specializing in scalable solutions and systems optimization.">
-    <meta name="author" content="Your Name">
-    <title>Personal Profile</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Neha Pancholi - Data Engineer specializing in scalable data solutions, pipelines, and analytics.">
+  <meta name="author" content="Neha Pancholi">
+  <title>Portfolio | Neha Pancholi</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Neha Pancholi</h1>
-        <p>Data Engineer | Data to Decisions: Building the Bridge</p>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I’m a statistician turned Data Engineer, experienced in transforming messy, raw data into scalable pipelines and actionable datasets that drive business impact</p>
-        </section>
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>Scripting, Programming Languages:  SQL, Python, PySpark, R</li>
-                <li>Databases and Cloud Technologies: MySQL, PostgreSQL, AWS(S3,Lambda,Athena,Redshift,QuickSight)</li>
-                <li>ETL Tools: AWS Glue, Airbyte, Airflow, Databricks </li>
-                <li>CI/CD and Automation Tools: Git, Cron, SFTP, Visual Studio</li>
-            </ul>
-        </section>
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <ul>
-                <li><strong>Data Engineer</strong> - Everest Fleet Pvt Ltd (April 2023 - Present)</li>
-                <li><strong>Analytics Engineer</strong> - Entelisoft India Pvt Ltd (April 2022 - March 2023)</li>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Neha Pancholi</h1>
+      <p class="tagline">Data Engineer | Data to Decisions: Building the Bridge</p>
+    </div>
+  </header>
 
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:nsp1736@gmail.com">nsp1736@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/Neha-22-data">github.com/Neha-22-data</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Neha Pancholi. All rights reserved.</p>
-    </footer>
+  <!-- Main Content -->
+  <main>
+    <!-- About -->
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>
+        I’m a statistician turned Data Engineer with experience in transforming messy, raw data 
+        into scalable pipelines and actionable datasets that drive real business impact. 
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="card">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div><strong>Scripting & Programming:</strong> SQL, Python, PySpark, R</div>
+        <div><strong>Databases & Cloud:</strong> MySQL, PostgreSQL, AWS (S3, Lambda, Athena, Redshift, QuickSight)</div>
+        <div><strong>ETL Tools:</strong> AWS Glue, Airbyte, Airflow, Databricks</div>
+        <div><strong>CI/CD & Automation:</strong> Git, Cron, SFTP, Visual Studio</div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="card">
+      <h2>Professional Experience</h2>
+      <ul class="timeline">
+        <li>
+          <span class="role">Data Engineer</span> - Everest Fleet Pvt Ltd 
+          <span class="date">(Apr 2023 - Present)</span>
+        </li>
+        <li>
+          <span class="role">Analytics Engineer</span> - Entelisoft India Pvt Ltd 
+          <span class="date">(Apr 2022 - Mar 2023)</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>AI DataCenter Energy Demand Forecasting</strong> - Built scalable pipelines on AWS for forecasting energy consumption using ML models.</li>
+        <li><strong>Reddit Data Pipeline</strong> - 
+         Automated Reddit API data extraction .</li>
+        🔗 <a href="https://github.com/Neha-22-data/reddit-pipeline" target="_blank">View Project</a>
+        <li><strong>AI Impact Data Pipeline</strong>
+         Designed data pipeline where data is uploaded to S3 using Rest API then transfrom and uploaded clean data to S3 which is further conected to Quicksight for dashboarding.</li>
+         🔗 <a href="https://github.com/Neha-22-data/AI_impact_datapiepline" target="_blank">View Project</a>
+      </ul>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="card">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Academy Accreditation - Databricks Fundamentals</li>
+        <li>SQL(Intermediate) - HackerRank</li>
+        <li>Python(Basic) - HackerRank</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <p><strong>M.Sc. in Industrial Statistics</strong> – North Maharashtra University</p>
+      <p><strong>B.Sc. in Statistics</strong> – North Maharashtra University</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:nsp1736@gmail.com">nsp1736@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Neha-22-data" target="_blank">github.com/Neha-22-data</a></p>
+      <p>LinkedIn: <a href="www.linkedin.com/in/neha-pancholi22" target="_blank">www.linkedin.com/in/neha-pancholi22</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Neha Pancholi. All rights reserved.</p>
+  </footer>
 </body>
 </html>

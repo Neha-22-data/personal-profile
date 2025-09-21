@@ -1,39 +1,172 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #e6ecfa);
+  color: #333;
+  line-height: 1.7;
 }
 
+/* Header */
 header {
-    text-align: center;
-    background: #2563eb;
-    color: white;
-    padding: 2rem 0;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+header .tagline {
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0.9;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Container */
 main {
-    max-width: 800px;
-    margin: 2rem auto;
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 2.5rem auto;
+  padding: 0 1.2rem;
 }
 
-h1, h2 {
-    color: #2563eb;
-    text-align: center;
+/* Card */
+.card {
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+/* Headings */
+h2 {
+  color: #2563eb;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  position: relative;
+}
+h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #2563eb;
+  display: block;
+  margin: 0.5rem auto 0;
+  border-radius: 3px;
 }
 
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 700px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Timeline Style */
+.timeline {
+  list-style: none;
+}
+.timeline li {
+  padding: 1rem 0;
+  border-left: 3px solid #2563eb;
+  padding-left: 1rem;
+  position: relative;
+}
+.timeline li::before {
+  content: "⚡";
+  position: absolute;
+  left: -1.5rem;
+  color: #2563eb;
+  font-size: 1.2rem;
+}
+.role {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+.date {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Links */
 a {
-    color: #2563eb;
-    text-decoration: none;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+a:hover {
+  color: #1e3a8a;
+  text-decoration: underline;
+}
+
+/* Project Links */
+#projects a {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+#projects a:hover {
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  font-size: 0.95rem;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeInDown {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
 }
