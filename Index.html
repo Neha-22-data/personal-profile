@@ -59,13 +59,14 @@
     <section id="projects" class="card">
       <h2>Projects</h2>
       <ul>
-        <li><strong>AI DataCenter Energy Demand Forecasting</strong> - Built scalable pipelines on AWS for forecasting energy consumption using ML models.</li>
-        <li><strong>Reddit Data Pipeline</strong> - 
-         Automated Reddit API data extraction .</li>
-        🔗 <a href="https://github.com/Neha-22-data/reddit-pipeline" target="_blank">View Project</a>
-        <li><strong>AI Impact Data Pipeline</strong>
-         Designed data pipeline where data is uploaded to S3 using Rest API then transfrom and uploaded clean data to S3 which is further conected to Quicksight for dashboarding.</li>
-         🔗 <a href="https://github.com/Neha-22-data/AI_impact_datapiepline" target="_blank">View Project</a>
+        <li>
+          <strong>Reddit Data Pipeline</strong> - Automated Reddit API data extraction.
+          <br>🔗 <a href="https://github.com/Neha-22-data/reddit-pipeline" target="_blank">View Project</a>
+        </li>
+        <li>
+          <strong>AI Impact Data Pipeline</strong> - Designed data pipeline where data is uploaded to S3 using Rest API then transformed and uploaded clean data to S3 which is further connected to Quicksight for dashboarding.
+          <br>🔗 <a href="https://github.com/Neha-22-data/AI_impact_datapiepline" target="_blank">View Project</a>
+        </li>
       </ul>
     </section>
 
@@ -91,7 +92,7 @@
       <h2>Contact Me</h2>
       <p>Email: <a href="mailto:nsp1736@gmail.com">nsp1736@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/Neha-22-data" target="_blank">github.com/Neha-22-data</a></p>
-      <p>LinkedIn: <a href="www.linkedin.com/in/neha-pancholi22" target="_blank">www.linkedin.com/in/neha-pancholi22</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/neha-pancholi22" target="_blank">www.linkedin.com/in/neha-pancholi22</a></p>
     </section>
   </main>
 
@@ -99,5 +100,19 @@
   <footer>
     <p>&copy; 2025 Neha Pancholi. All rights reserved.</p>
   </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => observer.observe(card));
+  </script>
 </body>
 </html>
